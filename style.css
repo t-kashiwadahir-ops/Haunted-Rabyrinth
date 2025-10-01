@@ -1,0 +1,59 @@
+body {
+    font-family: sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+#stamp-card {
+    display: grid;
+    /* 1行に表示するスタンプの数を6個に変更（お好みで調整してください） */
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 15px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 10px;
+}
+.stamp {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    /* 背景色や丸める設定を削除 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s;
+}
+/* スタンプ画像が親のdivに収まるようにする設定 */
+.stamp img {
+    max-width: 100%;
+    max-height: 100%;
+    filter: grayscale(80%); /* 未取得の画像を少し色褪せさせる */
+    opacity: 0.6; /* 未取得の画像を少し半透明にする */
+}
+
+.stamp.collected {
+    /* アニメーションを追加 */
+    animation: pop 0.3s ease-out; 
+}
+/* 取得済みのスタンプ画像のスタイル */
+.stamp.collected img {
+    filter: none; /* 色褪せをなくす */
+    opacity: 1; /* 透明度を元に戻す */
+}
+
+@keyframes pop {
+    0% { transform: scale(0.8); }
+    80% { transform: scale(1.1); }
+    100% { transform: scale(1.0); }
+}
+#message-area {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #ffeb3b;
+    min-height: 30px;
+}
