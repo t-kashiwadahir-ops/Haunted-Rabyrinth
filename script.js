@@ -1,7 +1,7 @@
 // --- 設定項目 ---
 // 迷路に隠すQRコードのIDを30種類登録します (ここは変更なし)
 const STAMP_IDS = [
-    'ghost', 'bat', 'spider', 'cat', 'pumpkin', 'skull', 'witch', 'mummy', 
+    'オバケ', 'bat', 'spider', 'cat', 'pumpkin', 'skull', 'witch', 'mummy', 
     'zombie', 'crow', 'vampire', 'werewolf', 'candy', 'potion', 'cauldron', 
     'eyeball', 'bone', 'knife', 'coffin', 'grave', 'candle', 'book', 'key', 
     'door', 'moon', 'web', 'chain', 'scream', 'broom', 'haunted-house'
