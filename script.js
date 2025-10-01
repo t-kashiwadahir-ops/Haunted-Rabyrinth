@@ -1,7 +1,7 @@
 // --- 設定項目 ---
 // 迷路に隠すQRコードのIDを30種類登録します (ここは変更なし)
 const STAMP_IDS = [
-    'オバケ', 'bat', 'spider', 'cat', 'pumpkin', 'skull', 'witch', 'mummy', 
+    'ghost', 'bat', 'spider', 'cat', 'pumpkin', 'skull', 'witch', 'mummy', 
     'zombie', 'crow', 'vampire', 'werewolf', 'candy', 'potion', 'cauldron', 
     'eyeball', 'bone', 'knife', 'coffin', 'grave', 'candle', 'book', 'key', 
     'door', 'moon', 'web', 'chain', 'scream', 'broom', 'haunted-house'
@@ -64,4 +64,5 @@ document.addEventListener('DOMContentLoaded', () => {
     
     stampCountEl.textContent = collectedStamps.length;
     document.getElementById('header-title').textContent = collectedStamps.length >= STAMP_IDS.length ? "🎉コンプリート！🎉" : "お化け迷路スタンプラリー";
+
 });
