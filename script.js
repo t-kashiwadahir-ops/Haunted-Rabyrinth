@@ -1,11 +1,9 @@
 // --- 設定項目 ---
-// 迷路に隠すQRコードのIDを30種類登録します (ここは変更なし)
+// 迷路に隠すQRコードのIDを10種類登録します (ここは変更なし)
 const STAMP_IDS = [
-    'ghost', 'bat', 'spider', 'cat', 'pumpkin', 'skull', 'witch', 'mummy', 
-    'zombie', 'crow', 'vampire', 'werewolf', 'candy', 'potion', 'cauldron', 
-    'eyeball', 'bone', 'knife', 'coffin', 'grave', 'candle', 'book', 'key', 
-    'door', 'moon', 'web', 'chain', 'scream', 'broom', 'haunted-house'
-];
+    'ghost', 'bat', 'spider', 'pumpkin', 'skull', 
+    'zombie', 'crow', 'vampire', 'grave', 'candle', 
+    ];
 // STAMP_EMOJIS の定義は不要になったので削除します
 
 // --- ここから下は変更しなくてOK ---
@@ -66,3 +64,4 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('header-title').textContent = collectedStamps.length >= STAMP_IDS.length ? "🎉コンプリート！🎉" : "お化け迷路スタンプラリー";
 
 });
+
