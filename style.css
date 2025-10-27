@@ -12,7 +12,7 @@ body {
 #stamp-card {
     display: grid;
     /* 1行に表示するスタンプの数を6個に変更（お好みで調整してください） */
-    grid-template-columns: repeat(6, 1fr); 
+    grid-template-columns: repeat(5, 1fr); 
     gap: 15px;
     margin-top: 20px;
     padding: 10px;
@@ -56,4 +56,5 @@ body {
     font-size: 1.2em;
     color: #ffeb3b;
     min-height: 30px;
+
 }
